@@ -287,7 +287,7 @@
     "@types/tinycolor2": "^1.4.3",
     "@types/yargs": "12 - 18",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
+    "@typescript-eslint/parser": "^8.46.2",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.8.0",
     "babel-jest": "^29.7.0",
     "babel-loader": "^9.1.3",
