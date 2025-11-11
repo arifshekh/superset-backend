@@ -29,6 +29,29 @@ from flask_caching.backends.filesystemcache import FileSystemCache
 
 logger = logging.getLogger()
 
+# Security configurations
+# WTF_CSRF_ENABLED = False
+ENABLE_PROXY_FIX = True
+ENABLE_CORS = True
+SESSION_COOKIE_SAMESITE = None
+TALISMAN_ENABLED = False
+PUBLIC_ROLE_LIKE_GAMMA = True
+GUEST_ROLE_NAME = "Gamma"
+PERMANENT_SESSION_LIFETIME = int(os.getenv('SESSION_TIMEOUT', 3600))
+
+# HTTP Headers
+HTTP_HEADERS = {
+    'X-Frame-Options': 'ALLOWALL'
+}
+
+# CORS Options
+CORS_OPTIONS = {
+    'supports_credentials': True,
+    'allow_headers': ['*'],
+    'resources': ['*'],
+    'origins': ['*']
+}
+
 # Get database dialect (used for both main and examples DB)
 # Check DB_DIALECT first (higher priority for overrides)
 DATABASE_DIALECT = (
